@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎣 phish-lens
+# phish-lens
 
 **Explainable phishing scorer for URLs and email bodies.**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📖 What is this?
+## What is this?
 
 **phish-lens decides whether a link or an email is trying to scam you — and tells you why.**
 
@@ -64,7 +64,7 @@ to look for next time.
 
 ---
 
-## ⚙️ How it works
+## How it works
 
 phish-lens extracts measurable features, assigns each a weight, and sums them into a 0–100
 score. No training data, no model file, no opaque inference — just transparent arithmetic.
@@ -138,7 +138,7 @@ so often.
 
 ---
 
-## 🚀 Install
+## Install
 
 ```bash
 git clone https://github.com/anonymoustest137/phish-lens.git
@@ -150,7 +150,7 @@ pip install -r requirements.txt   # only pytest, for the test suite
 
 ---
 
-## 💻 Usage
+## Usage
 
 ```bash
 # score a URL
@@ -197,7 +197,7 @@ cat email.txt | python -m phishlens.cli -f -
 
 ---
 
-## 🗂️ Project structure
+## Project structure
 
 | Path | Purpose |
 |---|---|
@@ -220,7 +220,7 @@ if result["verdict"] == "phishing":
 
 ---
 
-## 🧠 Design notes
+## Design notes
 
 **Why not machine learning?** A trained classifier would likely score a few points higher on
 a benchmark — but it needs labelled training data, a model file, a retraining pipeline, and
@@ -238,7 +238,7 @@ signal can't dominate the score.
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 Be aware of what this does *not* do:
 
@@ -253,7 +253,7 @@ Be aware of what this does *not* do:
 
 ---
 
-## 🧪 Tests
+## Tests
 
 ```bash
 pytest -q
@@ -264,7 +264,7 @@ calculation and reason generation. CI runs against Python 3.10 and 3.12.
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Homograph / punycode detection (`аpple.com` with a Cyrillic `а`)
 - [ ] Levenshtein distance against a brand domain list
@@ -274,7 +274,7 @@ calculation and reason generation. CI runs against Python 3.10 and 3.12.
 
 ---
 
-## 📄 License
+## License
 
 MIT — see [LICENSE](LICENSE).
 
@@ -284,6 +284,6 @@ MIT — see [LICENSE](LICENSE).
 
 Built by [@anonymoustest137](https://github.com/anonymoustest137) · [Portfolio](https://anonymoustest137.github.io/anonymoustest137/)
 
-⚠️ *For educational and authorized testing purposes only.*
+ *For educational and authorized testing purposes only.*
 
 </div>
